@@ -27,7 +27,7 @@ python3 -m http.server   # then visit http://localhost:8000
 ## Still to customize
 
 - Confirm the LinkedIn URL (`https://www.linkedin.com/in/irma-ward` is a placeholder guess)
-- Point the "Afterwords" and "Project Portfolio on GitHub" links at the specific repos
+- Point the "Project Portfolio on GitHub" link at the specific repo
 - Swap in a real repo/link for "AI Reporting in the Atlassian Suite" if one exists publicly
 
 ---
@@ -124,10 +124,10 @@ python3 -m http.server   # then visit http://localhost:8000
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
-                <!-- Project: Afterwords -->
+                <!-- Project: AfterWords -->
                 <div class="project-card">
                     <div class="project-header" style="background: linear-gradient(135deg, #4f46e5, #7c3aed);">
-                        <h3>Afterwords</h3>
+                        <h3>AfterWords</h3>
                     </div>
                     <div class="project-body">
                         <p>
@@ -139,8 +139,8 @@ python3 -m http.server   # then visit http://localhost:8000
                             <span class="badge">AI Tooling</span>
                             <span class="badge">Rapid Prototyping</span>
                         </div>
-                        <a href="https://github.com/Irma-Ward" class="project-link" target="_blank">
-                            View on GitHub →
+                        <a href="https://afterwords-support.lovable.app/" class="project-link" target="_blank">
+                            Visit AfterWords →
                         </a>
                     </div>
                 </div>
