@@ -1,17 +1,19 @@
 # portfolio
 
-Personal portfolio site for Irma — Technical Project Manager & AI Enthusiast.
+Personal portfolio site for Irma Ward — Technical Project Manager & AI Enthusiast.
 
-A single-page, responsive site built with plain HTML, CSS, and JavaScript. No build
-step or dependencies: open `index.html` in a browser to view it.
+A single-page, responsive site built with plain HTML, CSS, and JavaScript. No build step or
+dependencies: open `index.html` in a browser to view it.
 
 ## Structure
 
-| File | Purpose |
+| Path | Purpose |
 | --- | --- |
 | `index.html` | Page markup and content (nav, hero, about, projects, skills, resume, contact) |
-| `styles.css` | Styling, color palette (blues / cyan / light orange), and animations |
+| `styles.css` | Styling, color palette (indigo / violet / fuchsia accent, cool grays), and animations |
 | `script.js` | Smooth scroll, scroll-triggered fade-ins, active nav highlighting, ripple effect, counters |
+| `assets/headshot.jpg` | Hero headshot |
+| `assets/IrmaWard_PM_AI.pdf` | Downloadable resume linked from the Resume section |
 
 ## Running locally
 
@@ -24,11 +26,9 @@ python3 -m http.server   # then visit http://localhost:8000
 
 ## Still to customize
 
-- Replace the placeholder headshot (`https://via.placeholder.com/200`)
-- Fill in real education / experience details in the Resume section
-- Update LinkedIn and Twitter URLs (`YOUR_PROFILE`)
-- Point the "Vibe Coding" and case-study links at real destinations
-- Add a real resume PDF for the download button
+- Confirm the LinkedIn URL (`https://www.linkedin.com/in/irma-ward` is a placeholder guess)
+- Point the "Afterwords" and "Project Portfolio on GitHub" links at the specific repos
+- Swap in a real repo/link for "AI Reporting in the Atlassian Suite" if one exists publicly
 
 ---
 
@@ -42,14 +42,14 @@ python3 -m http.server   # then visit http://localhost:8000
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Irma - Product Manager & Game Development Leader</title>
+    <title>Irma Ward - AI Technical Project Manager</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">Irma</div>
+            <div class="logo">Irma Ward</div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -64,12 +64,13 @@ python3 -m http.server   # then visit http://localhost:8000
     <section class="hero">
         <div class="hero-content">
             <div class="hero-image-wrapper">
-                <img src="https://via.placeholder.com/200?text=Your+Headshot" alt="Irma" class="hero-image">
+                <img src="assets/headshot.jpg" alt="Irma Ward" class="hero-image">
             </div>
-            <h1 class="hero-title">Hey, I'm Irma 👋</h1>
-            <p class="hero-subtitle">Product Manager | Game Development Leader | Collaborative Problem Solver</p>
+            <h1 class="hero-title">Hi, I'm Irma Ward 👋</h1>
+            <p class="hero-subtitle">AI Technical Project Manager | Software Delivery | AI Workflow Implementation</p>
             <p class="hero-description">
-                12 years leading game development teams. I turn complex ideas into shipped products that people love.
+                10+ years leading software delivery and deploying AI-enabled workflow solutions across engineering,
+                DevOps, and QA — managing schedules, risks, and stakeholders from build through release.
             </p>
             <div class="hero-cta">
                 <a href="#projects" class="btn btn-primary">See My Work</a>
@@ -85,31 +86,32 @@ python3 -m http.server   # then visit http://localhost:8000
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        I'm a Project Manager with a BA in Computer Science and 12 years of hands-on experience in game development.
-                        I thrive at the intersection of strategy and execution, where I can collaborate with cross-functional teams to
-                        bring ambitious ideas to life.
+                        I'm an AI Technical Project Manager with 10+ years leading software delivery across engineering,
+                        DevOps, and QA. I specialize in deploying AI-enabled workflow solutions that make reporting, QA,
+                        and localization faster and more consistent.
                     </p>
                     <p>
-                        My background spans managing complex development cycles, leading diverse teams, and solving problems through
-                        a collaborative lens. I believe the best products come from listening, understanding, and working together toward
-                        shared goals.
+                        My work centers on managing schedules, risks, dependencies, and stakeholder communication in Agile
+                        environments — and on driving AI adoption through practical tooling and measurable process
+                        improvements from build through release.
                     </p>
                     <p>
-                        When I'm not managing projects, you'll find me exploring new tools, automating workflows, or diving into how
-                        technology can solve real problems.
+                        I've delivered live mobile and web applications end to end, coordinated releases with partners like
+                        the Apple App Store and Google Play, and produced executive status reporting that improves release
+                        visibility and risk escalation.
                     </p>
                 </div>
                 <div class="about-highlights">
                     <div class="highlight-card">
-                        <div class="highlight-number">12+</div>
-                        <div class="highlight-label">Years in Game Dev</div>
+                        <div class="highlight-number">10+</div>
+                        <div class="highlight-label">Years Leading Software Delivery</div>
                     </div>
                     <div class="highlight-card">
-                        <div class="highlight-number">∞</div>
-                        <div class="highlight-label">Enthusiasm for Collaboration</div>
+                        <div class="highlight-number">AI</div>
+                        <div class="highlight-label">Workflow Implementation</div>
                     </div>
                     <div class="highlight-card">
-                        <div class="highlight-number">BA</div>
+                        <div class="highlight-number">BS</div>
                         <div class="highlight-label">Computer Science</div>
                     </div>
                 </div>
@@ -122,65 +124,65 @@ python3 -m http.server   # then visit http://localhost:8000
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
-                <!-- Project 1: Job Collector Agent -->
+                <!-- Project: Afterwords -->
                 <div class="project-card">
-                    <div class="project-header" style="background: linear-gradient(135deg, #0ea5e9, #06b6d4);">
-                        <h3>Job Collector Agent</h3>
+                    <div class="project-header" style="background: linear-gradient(135deg, #4f46e5, #7c3aed);">
+                        <h3>Afterwords</h3>
                     </div>
                     <div class="project-body">
                         <p>
-                            Automated AI agent that scrapes job listings from Indeed & Google Jobs, filters by criteria,
-                            and outputs to an Excel file updated 2x daily on weekdays.
+                            A vibe-coded application built end to end with AI development tools — an exploration of how AI
+                            can accelerate design, iteration, and delivery for a small product team.
                         </p>
                         <div class="project-details">
-                            <span class="badge">Node.js</span>
-                            <span class="badge">GitHub Actions</span>
-                            <span class="badge">Automation</span>
+                            <span class="badge">Vibe-Coding</span>
+                            <span class="badge">AI Tooling</span>
+                            <span class="badge">Rapid Prototyping</span>
                         </div>
-                        <a href="https://github.com/Irma-Ward/job-collector" class="project-link" target="_blank">
+                        <a href="https://github.com/Irma-Ward" class="project-link" target="_blank">
                             View on GitHub →
                         </a>
                     </div>
                 </div>
 
-                <!-- Project 2: Vibe Coding Project -->
+                <!-- Project: AI Reporting in the Atlassian Suite -->
                 <div class="project-card">
-                    <div class="project-header" style="background: linear-gradient(135deg, #f97316, #fb923c);">
-                        <h3>Vibe Coding</h3>
+                    <div class="project-header" style="background: linear-gradient(135deg, #7c3aed, #c026d3);">
+                        <h3>AI Reporting in the Atlassian Suite</h3>
                     </div>
                     <div class="project-body">
                         <p>
-                            A creative coding exploration project that brings ideas to life through visual design and interactivity.
-                            Built with a focus on user experience and welcoming aesthetics.
+                            Coordinated AI-assisted reporting workflows in Jira and Confluence to improve release
+                            visibility — surfacing blockers, dependencies, and delivery progress for executive stakeholders.
                         </p>
                         <div class="project-details">
-                            <span class="badge">Design</span>
-                            <span class="badge">UX</span>
-                            <span class="badge">Interactive</span>
+                            <span class="badge">Jira</span>
+                            <span class="badge">Confluence</span>
+                            <span class="badge">AI Automation</span>
                         </div>
-                        <a href="#" class="project-link" target="_blank">
-                            View Project →
+                        <a href="#contact" class="project-link">
+                            Ask Me About It →
                         </a>
                     </div>
                 </div>
 
-                <!-- Project 3: Portfolio Template -->
+                <!-- Project: Project Portfolio on GitHub -->
                 <div class="project-card">
-                    <div class="project-header" style="background: linear-gradient(135deg, #06b6d4, #0ea5e9);">
-                        <h3>PM Leadership Case Study</h3>
+                    <div class="project-header" style="background: linear-gradient(135deg, #c026d3, #4f46e5);">
+                        <h3>Project Portfolio on GitHub</h3>
                     </div>
                     <div class="project-body">
                         <p>
-                            A deep dive into a major game development project: scope, team structure, challenges faced,
-                            and how collaborative problem-solving led to successful delivery.
+                            A growing collection of hands-on AI and automation projects — from workflow agents to reporting
+                            tooling — documenting practical experiments in AI implementation.
                         </p>
                         <div class="project-details">
-                            <span class="badge">Leadership</span>
-                            <span class="badge">Game Dev</span>
-                            <span class="badge">Strategy</span>
+                            <span class="badge">GitHub</span>
+                            <span class="badge">AI Projects</span>
+                            <span class="badge">Automation</span>
                         </div>
-                        <a href="#" class="project-link">
-                            Read Case Study →
+                        <a href="https://github.com/Irma-Ward" class="project-link" target="_blank">
+                            Browse Repositories →
                         </a>
                     </div>
                 </div>
@@ -196,37 +198,37 @@ python3 -m http.server   # then visit http://localhost:8000
                 <div class="skill-category">
                     <h3>Project Management</h3>
                     <ul>
-                        <li>Agile & Scrum</li>
-                        <li>Stakeholder Management</li>
-                        <li>Resource Planning</li>
-                        <li>Risk Management</li>
+                        <li>AI Project Management</li>
+                        <li>Project Planning</li>
+                        <li>Risk & Dependency Management</li>
+                        <li>Agile &amp; Scrum</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Game Development</h3>
+                    <h3>Software Delivery</h3>
                     <ul>
-                        <li>Game Production</li>
-                        <li>Team Leadership</li>
-                        <li>Cross-functional Collaboration</li>
-                        <li>Launch Strategy</li>
+                        <li>End-to-End Implementation</li>
+                        <li>Release Coordination</li>
+                        <li>App Store &amp; Google Play Deployment</li>
+                        <li>Deployment Readiness</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Leadership & Collaboration</h3>
+                    <h3>AI Workflow Implementation</h3>
                     <ul>
-                        <li>Team Building</li>
-                        <li>Communication</li>
-                        <li>Conflict Resolution</li>
-                        <li>Mentorship</li>
+                        <li>AI Automation</li>
+                        <li>AI-Assisted QA</li>
+                        <li>AI Reporting Workflows</li>
+                        <li>AI Adoption &amp; Enablement</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Technical Literacy</h3>
+                    <h3>Leadership &amp; Communication</h3>
                     <ul>
-                        <li>Understanding Code</li>
-                        <li>Automation & Tools</li>
-                        <li>Data & Analytics</li>
-                        <li>Technical Specs</li>
+                        <li>Cross-Functional Leadership</li>
+                        <li>Stakeholder Communication</li>
+                        <li>Executive Status Reporting</li>
+                        <li>Mentoring &amp; Coaching</li>
                     </ul>
                 </div>
             </div>
@@ -236,40 +238,72 @@ python3 -m http.server   # then visit http://localhost:8000
     <!-- Resume Section -->
     <section id="resume" class="resume">
         <div class="container">
-            <h2 class="section-title">Resume & Background</h2>
+            <h2 class="section-title">Resume &amp; Background</h2>
             <div class="resume-content">
                 <div class="resume-left">
                     <h3>Education</h3>
                     <div class="resume-item">
-                        <h4>Bachelor of Arts in Computer Science</h4>
-                        <p class="resume-year">Your University • Year</p>
-                        <p>Brief description of your degree focus or achievements.</p>
+                        <h4>Bachelor of Science, Computer Science</h4>
+                        <p class="resume-year">DeVry University</p>
                     </div>
 
                     <h3 style="margin-top: 2rem;">Experience Highlights</h3>
                     <div class="resume-item">
-                        <h4>Senior Project Manager / Lead</h4>
-                        <p class="resume-year">Game Studio • Years</p>
-                        <p>Led cross-functional teams, managed multi-year projects, shipped titles successfully.</p>
+                        <h4>Sr. Deployment Project Manager — AI Delivery &amp; Software Implementation</h4>
+                        <p class="resume-year">Scopely (Remote) • Jul 2023 – Mar 2026</p>
+                        <p>
+                            Led enterprise AI initiatives — AI-assisted QA automation and improved AI reporting workflows
+                            in Jira and Confluence — and coordinated end-to-end AI-enabled delivery across Engineering,
+                            DevOps, QA, Production, and Live Ops.
+                        </p>
                     </div>
                     <div class="resume-item">
-                        <h4>Project Manager</h4>
-                        <p class="resume-year">Game Company • Years</p>
-                        <p>Managed production cycles, coordinated with stakeholders, optimized team workflows.</p>
+                        <h4>Deployment Project Manager — Software Delivery</h4>
+                        <p class="resume-year">Scopely (Remote) • Feb 2021 – Jul 2023</p>
+                        <p>
+                            Managed end-to-end software implementation and deployment for live mobile and web applications,
+                            coordinating release schedules with Apple App Store Connect and Google Play Console across
+                            concurrent projects.
+                        </p>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Associate Producer &amp; Technical Project Coordinator</h4>
+                        <p class="resume-year">Microsoft / The Initiative • Dec 2018 – Sep 2020</p>
+                        <p>
+                            Coordinated software development milestones across engineering, design, and production; built
+                            schedules, tracked risks, and created Jira workflows that improved delivery visibility and
+                            stakeholder alignment.
+                        </p>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Producer</h4>
+                        <p class="resume-year">Lucid Sight • May 2018 – Oct 2018</p>
+                        <p>
+                            Led cross-functional software teams delivering mobile and PC applications, partnering with
+                            engineering and QA to resolve delivery issues and protect schedules.
+                        </p>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Associate Producer</h4>
+                        <p class="resume-year">Deluxe Entertainment • Nov 2015 – Apr 2018</p>
+                        <p>
+                            Supported enterprise software delivery across North America, Europe, and APAC, coordinating
+                            localization, publishing, and deployment readiness across technical teams.
+                        </p>
                     </div>
                 </div>
 
                 <div class="resume-right">
                     <div class="resume-download">
                         <h3>Download Full Resume</h3>
-                        <p>Get the complete details of my experience, education, and accomplishments.</p>
-                        <a href="#" class="btn btn-primary" download>Download PDF</a>
+                        <p>The complete rundown of my experience delivering software and implementing AI workflows.</p>
+                        <a href="assets/IrmaWard_PM_AI.pdf" class="btn btn-primary" download>Download PDF</a>
                     </div>
                     <div class="resume-note">
-                        <h3>Let's Chat</h3>
+                        <h3>Certifications &amp; Languages</h3>
                         <p>
-                            Interested in learning more? I'm always happy to discuss how my experience can contribute
-                            to your team's success.
+                            <strong>Certifications:</strong> Succeed in the Age of AI · Intro to AI Agents and Agentic AI<br>
+                            <strong>Languages:</strong> English · Spanish
                         </p>
                         <a href="#contact" class="btn btn-secondary">Get in Touch</a>
                     </div>
@@ -283,7 +317,10 @@ python3 -m http.server   # then visit http://localhost:8000
         <div class="container">
             <h2 class="section-title">Let's Connect</h2>
             <div class="contact-content">
-                <p>I'm always open to conversations about game development, product management, and collaboration opportunities.</p>
+                <p>
+                    Based in San Marcos, CA and open to remote. I'm always up for a conversation about software delivery,
+                    AI workflow implementation, and technical project management.
+                </p>
                 <div class="contact-links">
                     <a href="mailto:iwardgamer@gmail.com" class="contact-link">
                         <span class="contact-icon">✉️</span> Email
@@ -291,11 +328,8 @@ python3 -m http.server   # then visit http://localhost:8000
                     <a href="https://github.com/Irma-Ward" class="contact-link" target="_blank">
                         <span class="contact-icon">💻</span> GitHub
                     </a>
-                    <a href="https://linkedin.com/in/YOUR_PROFILE" class="contact-link" target="_blank">
+                    <a href="https://www.linkedin.com/in/irma-ward" class="contact-link" target="_blank">
                         <span class="contact-icon">💼</span> LinkedIn
-                    </a>
-                    <a href="https://twitter.com/YOUR_PROFILE" class="contact-link" target="_blank">
-                        <span class="contact-icon">🐦</span> Twitter
                     </a>
                 </div>
             </div>
@@ -305,7 +339,7 @@ python3 -m http.server   # then visit http://localhost:8000
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Irma. Crafted with collaboration and care.</p>
+            <p>&copy; 2026 Irma Ward. Crafted with collaboration and care.</p>
         </div>
     </footer>
 
@@ -319,23 +353,23 @@ python3 -m http.server   # then visit http://localhost:8000
 ```css
 /* ==========================================
    PORTFOLIO - STYLES & ANIMATIONS
-   Color Palette: Lights, Blues, Cyan, Light Oranges
+   Color Palette: Indigo, Violet, Fuchsia accent, Cool Grays
    ========================================== */
 
 /* Reset & Variables */
 :root {
-    /* Primary Colors */
-    --cyan: #06b6d4;
-    --cyan-light: #cffafe;
-    --blue: #0ea5e9;
-    --blue-light: #e0f2fe;
-    --orange: #f97316;
-    --orange-light: #fed7aa;
+    /* Primary Colors - Indigo + Violet */
+    --cyan: #7c3aed;          /* violet (secondary) */
+    --cyan-light: #ede9fe;    /* violet-100 */
+    --blue: #4f46e5;          /* indigo (primary) */
+    --blue-light: #e0e7ff;    /* indigo-100 */
+    --orange: #c026d3;        /* fuchsia (accent) */
+    --orange-light: #fae8ff;  /* fuchsia-100 */
     --white: #ffffff;
     --light-bg: #f8fafc;
     --light-gray: #e2e8f0;
-    --gray: #64748b;
-    --dark: #1e293b;
+    --gray: #4b5563;          /* cool gray-600 */
+    --dark: #1e1b4b;          /* indigo-950 */
 
     /* Shadows */
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -487,7 +521,7 @@ body {
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid var(--cyan);
-    box-shadow: var(--shadow-lg), 0 0 30px rgba(6, 182, 212, 0.3);
+    box-shadow: var(--shadow-lg), 0 0 30px rgba(124, 58, 237, 0.3);
 }
 
 .hero-title {
@@ -557,7 +591,7 @@ body {
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 15px 30px rgba(14, 165, 233, 0.3);
+    box-shadow: 0 15px 30px rgba(79, 70, 229, 0.3);
 }
 
 .btn-secondary {
@@ -835,7 +869,7 @@ body {
 }
 
 .resume-note {
-    background: linear-gradient(135deg, var(--orange-light), rgba(249, 115, 22, 0.1));
+    background: linear-gradient(135deg, var(--orange-light), rgba(192, 38, 211, 0.1));
 }
 
 .resume-download h3,
@@ -1227,10 +1261,10 @@ initMobileMenu();
 // Console welcome message
 console.log(
     '%c Welcome to Irma\'s Portfolio! ',
-    'background: linear-gradient(135deg, #0ea5e9, #06b6d4); color: white; padding: 10px 20px; border-radius: 5px; font-size: 14px; font-weight: bold;'
+    'background: linear-gradient(135deg, #4f46e5, #7c3aed); color: white; padding: 10px 20px; border-radius: 5px; font-size: 14px; font-weight: bold;'
 );
 console.log(
     '%c Built with collaboration and care 🤝',
-    'color: #06b6d4; font-size: 12px; font-style: italic;'
+    'color: #7c3aed; font-size: 12px; font-style: italic;'
 );
 ```

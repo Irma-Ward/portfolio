@@ -188,9 +188,9 @@ initMobileMenu();
 // Console welcome message
 console.log(
     '%c Welcome to Irma\'s Portfolio! ',
-    'background: linear-gradient(135deg, #0ea5e9, #06b6d4); color: white; padding: 10px 20px; border-radius: 5px; font-size: 14px; font-weight: bold;'
+    'background: linear-gradient(135deg, #4f46e5, #7c3aed); color: white; padding: 10px 20px; border-radius: 5px; font-size: 14px; font-weight: bold;'
 );
 console.log(
     '%c Built with collaboration and care 🤝',
-    'color: #06b6d4; font-size: 12px; font-style: italic;'
+    'color: #7c3aed; font-size: 12px; font-style: italic;'
 );
