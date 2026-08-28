@@ -13,6 +13,8 @@ dependencies: open `index.html` in a browser to view it.
 | `styles.css` | Styling, color palette (indigo / violet / fuchsia accent, cool grays), and animations |
 | `script.js` | Smooth scroll, scroll-triggered fade-ins, active nav highlighting, ripple effect, counters |
 | `assets/headshot.jpg` | Hero headshot |
+| `assets/about-tahoe.jpg` | Casual photo in the About section |
+| `assets/contact-portrait.jpg` | Casual photo in the Contact section |
 | `assets/IrmaWard_PM_AI.pdf` | Downloadable resume linked from the Resume section |
 
 ## Running locally
@@ -101,19 +103,22 @@ python3 -m http.server   # then visit http://localhost:8000
                         visibility and risk escalation.
                     </p>
                 </div>
-                <div class="about-highlights">
-                    <div class="highlight-card">
-                        <div class="highlight-number">10+</div>
-                        <div class="highlight-label">Years Leading Software Delivery</div>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-number">AI</div>
-                        <div class="highlight-label">Workflow Implementation</div>
-                    </div>
-                    <div class="highlight-card">
-                        <div class="highlight-number">BS</div>
-                        <div class="highlight-label">Computer Science</div>
-                    </div>
+                <div class="about-photo">
+                    <img src="assets/about-tahoe.jpg" alt="Irma Ward on a boardwalk trail near Lake Tahoe">
+                </div>
+            </div>
+            <div class="about-highlights">
+                <div class="highlight-card">
+                    <div class="highlight-number">10+</div>
+                    <div class="highlight-label">Years Leading Software Delivery</div>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-number">AI</div>
+                    <div class="highlight-label">Workflow Implementation</div>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-number">BS</div>
+                    <div class="highlight-label">Computer Science</div>
                 </div>
             </div>
         </div>
@@ -317,6 +322,7 @@ python3 -m http.server   # then visit http://localhost:8000
         <div class="container">
             <h2 class="section-title">Let's Connect</h2>
             <div class="contact-content">
+                <img src="assets/contact-portrait.jpg" alt="Irma Ward" class="contact-portrait">
                 <p>
                     Based in San Marcos, CA and open to remote. I'm always up for a conversation about software delivery,
                     AI workflow implementation, and technical project management.
@@ -645,10 +651,23 @@ body {
     line-height: 1.8;
 }
 
+.about-photo {
+    animation: slideUp 0.8s ease 0.2s both;
+}
+
+.about-photo img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
+    object-fit: cover;
+    aspect-ratio: 4 / 5;
+}
+
 .about-highlights {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
+    margin-top: 3rem;
     animation: slideUp 0.8s ease 0.2s both;
 }
 
@@ -894,6 +913,17 @@ body {
 .contact-content {
     text-align: center;
     animation: slideUp 0.8s ease both;
+}
+
+.contact-portrait {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    border: 4px solid var(--white);
+    box-shadow: var(--shadow-lg);
+    margin-bottom: 1.5rem;
 }
 
 .contact-content p {

@@ -292,10 +292,23 @@ body {
     line-height: 1.8;
 }
 
+.about-photo {
+    animation: slideUp 0.8s ease 0.2s both;
+}
+
+.about-photo img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
+    object-fit: cover;
+    aspect-ratio: 4 / 5;
+}
+
 .about-highlights {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
+    margin-top: 3rem;
     animation: slideUp 0.8s ease 0.2s both;
 }
 
@@ -541,6 +554,17 @@ body {
 .contact-content {
     text-align: center;
     animation: slideUp 0.8s ease both;
+}
+
+.contact-portrait {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    border: 4px solid var(--white);
+    box-shadow: var(--shadow-lg);
+    margin-bottom: 1.5rem;
 }
 
 .contact-content p {
