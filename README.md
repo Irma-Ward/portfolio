@@ -1,6 +1,6 @@
 # portfolio
 
-Personal portfolio site for Irma — Product Manager & Game Development Leader.
+Personal portfolio site for Irma — Technical Project Manager & AI Enthusiast.
 
 A single-page, responsive site built with plain HTML, CSS, and JavaScript. No build
 step or dependencies: open `index.html` in a browser to view it.
