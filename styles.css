@@ -545,6 +545,37 @@ body {
     line-height: 1.8;
 }
 
+.resume-note-list {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.resume-note-list li {
+    padding: 0.35rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.resume-note-list li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--cyan);
+    font-weight: bold;
+}
+
+.resume-note a:not(.btn) {
+    color: var(--blue);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.resume-note a:not(.btn):hover {
+    color: var(--cyan);
+    text-decoration: underline;
+}
+
 /* Contact Section */
 .contact {
     padding: 5rem 2rem;

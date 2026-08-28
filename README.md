@@ -1,17 +1,17 @@
 # portfolio
 
-Personal portfolio site for Irma Ward — Technical Project Manager & AI Enthusiast.
+Personal portfolio site for Irma Ward, Technical Project Manager and AI Enthusiast.
 
-A single-page, responsive site built with plain HTML, CSS, and JavaScript. No build step or
-dependencies: open `index.html` in a browser to view it.
+A responsive one page site built with plain HTML, CSS, and JavaScript. There is no build
+step and there are no dependencies: open `index.html` in a browser to view it.
 
 ## Structure
 
 | Path | Purpose |
 | --- | --- |
 | `index.html` | Page markup and content (nav, hero, about, projects, skills, resume, contact) |
-| `styles.css` | Styling, color palette (indigo / violet / fuchsia accent, cool grays), and animations |
-| `script.js` | Smooth scroll, scroll-triggered fade-ins, active nav highlighting, ripple effect, counters |
+| `styles.css` | Styling, color palette (indigo, violet, fuchsia accent, cool grays), and animations |
+| `script.js` | Smooth scroll, scroll triggered fade ins, active nav highlighting, ripple effect, counters |
 | `assets/headshot.jpg` | Hero headshot |
 | `assets/about-tahoe.jpg` | Casual photo in the About section |
 | `assets/contact-portrait.jpg` | Casual photo in the Contact section |
@@ -30,7 +30,7 @@ python3 -m http.server   # then visit http://localhost:8000
 
 - Confirm the LinkedIn URL (`https://www.linkedin.com/in/irma-ward` is a placeholder guess)
 - Point the "Project Portfolio on GitHub" link at the specific repo
-- Swap in a real repo/link for "AI Reporting in the Atlassian Suite" if one exists publicly
+- Swap in a real link for "AI Reporting in the Atlassian Suite" if one exists publicly
 
 ---
 
@@ -44,7 +44,7 @@ python3 -m http.server   # then visit http://localhost:8000
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Irma Ward - AI Technical Project Manager</title>
+    <title>Irma Ward | AI Technical Project Manager</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -71,8 +71,8 @@ python3 -m http.server   # then visit http://localhost:8000
             <h1 class="hero-title">Hi, I'm Irma Ward 👋</h1>
             <p class="hero-subtitle">AI Technical Project Manager | Software Delivery | AI Workflow Implementation</p>
             <p class="hero-description">
-                10+ years leading software delivery and deploying AI-enabled workflow solutions across engineering,
-                DevOps, and QA — managing schedules, risks, and stakeholders from build through release.
+                10+ years leading software delivery and deploying AI enabled workflow solutions across engineering,
+                DevOps, and QA. I manage schedules, risks, and stakeholders from build through release.
             </p>
             <div class="hero-cta">
                 <a href="#projects" class="btn btn-primary">See My Work</a>
@@ -89,12 +89,12 @@ python3 -m http.server   # then visit http://localhost:8000
                 <div class="about-text">
                     <p>
                         I'm an AI Technical Project Manager with 10+ years leading software delivery across engineering,
-                        DevOps, and QA. I specialize in deploying AI-enabled workflow solutions that make reporting, QA,
+                        DevOps, and QA. I specialize in deploying AI enabled workflow solutions that make reporting, QA,
                         and localization faster and more consistent.
                     </p>
                     <p>
                         My work centers on managing schedules, risks, dependencies, and stakeholder communication in Agile
-                        environments — and on driving AI adoption through practical tooling and measurable process
+                        environments. I also drive AI adoption through practical tooling and measurable process
                         improvements from build through release.
                     </p>
                     <p>
@@ -136,11 +136,11 @@ python3 -m http.server   # then visit http://localhost:8000
                     </div>
                     <div class="project-body">
                         <p>
-                            A vibe-coded application built end to end with AI development tools — an exploration of how AI
-                            can accelerate design, iteration, and delivery for a small product team.
+                            A web application built end to end with AI development tools. It explores how AI
+                            can speed up design, iteration, and delivery for a small product team.
                         </p>
                         <div class="project-details">
-                            <span class="badge">Vibe-Coding</span>
+                            <span class="badge">Vibe Coding</span>
                             <span class="badge">AI Tooling</span>
                             <span class="badge">Rapid Prototyping</span>
                         </div>
@@ -157,8 +157,8 @@ python3 -m http.server   # then visit http://localhost:8000
                     </div>
                     <div class="project-body">
                         <p>
-                            Coordinated AI-assisted reporting workflows in Jira and Confluence to improve release
-                            visibility — surfacing blockers, dependencies, and delivery progress for executive stakeholders.
+                            Coordinated AI assisted reporting workflows in Jira and Confluence to improve release
+                            visibility, surfacing blockers, dependencies, and delivery progress for executive stakeholders.
                         </p>
                         <div class="project-details">
                             <span class="badge">Jira</span>
@@ -178,8 +178,8 @@ python3 -m http.server   # then visit http://localhost:8000
                     </div>
                     <div class="project-body">
                         <p>
-                            A growing collection of hands-on AI and automation projects — from workflow agents to reporting
-                            tooling — documenting practical experiments in AI implementation.
+                            A growing collection of practical AI and automation projects, from workflow agents to reporting
+                            tooling, documenting real experiments in AI implementation.
                         </p>
                         <div class="project-details">
                             <span class="badge">GitHub</span>
@@ -212,7 +212,7 @@ python3 -m http.server   # then visit http://localhost:8000
                 <div class="skill-category">
                     <h3>Software Delivery</h3>
                     <ul>
-                        <li>End-to-End Implementation</li>
+                        <li>End to End Implementation</li>
                         <li>Release Coordination</li>
                         <li>App Store &amp; Google Play Deployment</li>
                         <li>Deployment Readiness</li>
@@ -222,7 +222,7 @@ python3 -m http.server   # then visit http://localhost:8000
                     <h3>AI Workflow Implementation</h3>
                     <ul>
                         <li>AI Automation</li>
-                        <li>AI-Assisted QA</li>
+                        <li>AI Assisted QA</li>
                         <li>AI Reporting Workflows</li>
                         <li>AI Adoption &amp; Enablement</li>
                     </ul>
@@ -230,7 +230,7 @@ python3 -m http.server   # then visit http://localhost:8000
                 <div class="skill-category">
                     <h3>Leadership &amp; Communication</h3>
                     <ul>
-                        <li>Cross-Functional Leadership</li>
+                        <li>Cross Functional Leadership</li>
                         <li>Stakeholder Communication</li>
                         <li>Executive Status Reporting</li>
                         <li>Mentoring &amp; Coaching</li>
@@ -254,26 +254,26 @@ python3 -m http.server   # then visit http://localhost:8000
 
                     <h3 style="margin-top: 2rem;">Experience Highlights</h3>
                     <div class="resume-item">
-                        <h4>Sr. Deployment Project Manager — AI Delivery &amp; Software Implementation</h4>
-                        <p class="resume-year">Scopely (Remote) • Jul 2023 – Mar 2026</p>
+                        <h4>Sr. Deployment Project Manager, AI Delivery &amp; Software Implementation</h4>
+                        <p class="resume-year">Scopely (Remote) • Jul 2023 to Mar 2026</p>
                         <p>
-                            Led enterprise AI initiatives — AI-assisted QA automation and improved AI reporting workflows
-                            in Jira and Confluence — and coordinated end-to-end AI-enabled delivery across Engineering,
-                            DevOps, QA, Production, and Live Ops.
+                            Led enterprise AI initiatives including AI assisted QA automation and improved AI reporting
+                            workflows in Jira and Confluence, and coordinated end to end AI enabled delivery across
+                            Engineering, DevOps, QA, Production, and Live Ops.
                         </p>
                     </div>
                     <div class="resume-item">
-                        <h4>Deployment Project Manager — Software Delivery</h4>
-                        <p class="resume-year">Scopely (Remote) • Feb 2021 – Jul 2023</p>
+                        <h4>Deployment Project Manager, Software Delivery</h4>
+                        <p class="resume-year">Scopely (Remote) • Feb 2021 to Jul 2023</p>
                         <p>
-                            Managed end-to-end software implementation and deployment for live mobile and web applications,
-                            coordinating release schedules with Apple App Store Connect and Google Play Console across
-                            concurrent projects.
+                            Managed software implementation and deployment for live mobile and web applications from build
+                            through release, coordinating schedules with Apple App Store Connect and Google Play Console
+                            across concurrent projects.
                         </p>
                     </div>
                     <div class="resume-item">
                         <h4>Associate Producer &amp; Technical Project Coordinator</h4>
-                        <p class="resume-year">Microsoft / The Initiative • Dec 2018 – Sep 2020</p>
+                        <p class="resume-year">Microsoft / The Initiative • Dec 2018 to Sep 2020</p>
                         <p>
                             Coordinated software development milestones across engineering, design, and production; built
                             schedules, tracked risks, and created Jira workflows that improved delivery visibility and
@@ -282,15 +282,15 @@ python3 -m http.server   # then visit http://localhost:8000
                     </div>
                     <div class="resume-item">
                         <h4>Producer</h4>
-                        <p class="resume-year">Lucid Sight • May 2018 – Oct 2018</p>
+                        <p class="resume-year">Lucid Sight • May 2018 to Oct 2018</p>
                         <p>
-                            Led cross-functional software teams delivering mobile and PC applications, partnering with
-                            engineering and QA to resolve delivery issues and protect schedules.
+                            Led software teams spanning engineering, QA, and production to deliver mobile and PC
+                            applications, resolving delivery issues and protecting schedules along the way.
                         </p>
                     </div>
                     <div class="resume-item">
                         <h4>Associate Producer</h4>
-                        <p class="resume-year">Deluxe Entertainment • Nov 2015 – Apr 2018</p>
+                        <p class="resume-year">Deluxe Entertainment • Nov 2015 to Apr 2018</p>
                         <p>
                             Supported enterprise software delivery across North America, Europe, and APAC, coordinating
                             localization, publishing, and deployment readiness across technical teams.
@@ -306,10 +306,16 @@ python3 -m http.server   # then visit http://localhost:8000
                     </div>
                     <div class="resume-note">
                         <h3>Certifications &amp; Languages</h3>
-                        <p>
-                            <strong>Certifications:</strong> Succeed in the Age of AI · Intro to AI Agents and Agentic AI<br>
-                            <strong>Languages:</strong> English · Spanish
-                        </p>
+                        <p><strong>Certifications</strong></p>
+                        <ul class="resume-note-list">
+                            <li>
+                                <a href="https://www.udemy.com/certificate/UC-52bb67dd-0468-4aef-92c9-328d9e9c293a/" target="_blank" rel="noopener">Succeed in the Age of AI</a>
+                            </li>
+                            <li>
+                                <a href="https://www.udemy.com/certificate/UC-a608ba04-d9a9-426a-a63d-e0dffb17490f/" target="_blank" rel="noopener">Intro to AI Agents and Agentic AI</a>
+                            </li>
+                        </ul>
+                        <p><strong>Languages</strong><br>English, Spanish</p>
                         <a href="#contact" class="btn btn-secondary">Get in Touch</a>
                     </div>
                 </div>
@@ -902,6 +908,37 @@ body {
     color: var(--gray);
     margin-bottom: 1rem;
     line-height: 1.8;
+}
+
+.resume-note-list {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.resume-note-list li {
+    padding: 0.35rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.resume-note-list li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--cyan);
+    font-weight: bold;
+}
+
+.resume-note a:not(.btn) {
+    color: var(--blue);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.resume-note a:not(.btn):hover {
+    color: var(--cyan);
+    text-decoration: underline;
 }
 
 /* Contact Section */
