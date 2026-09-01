@@ -9,12 +9,13 @@ step and there are no dependencies: open `index.html` in a browser to view it.
 
 | Path | Purpose |
 | --- | --- |
-| `index.html` | Page markup and content (nav, hero, about, projects, skills, resume, contact) |
-| `styles.css` | Styling, color palette (indigo, violet, fuchsia accent, cool grays), and animations |
-| `script.js` | Smooth scroll, scroll triggered fade ins, active nav highlighting, ripple effect, counters |
+| `index.html` | Page markup and content (nav, hero, about, how I work, projects, skills, resume, off the clock, contact) |
+| `styles.css` | Styling, color palette (indigo, violet, fuchsia accent, cool grays), photo frames, and animations |
+| `script.js` | Smooth scroll, reveal on scroll, active nav highlighting, ripple effect, counters |
 | `assets/headshot.jpg` | Hero headshot |
-| `assets/about-tahoe.jpg` | Casual photo in the About section |
-| `assets/contact-portrait.jpg` | Casual photo in the Contact section |
+| `assets/about-tahoe.jpg` | Photo in the About section |
+| `assets/contact-portrait.jpg` | Photo in the Contact section |
+| `assets/hiking.jpg` `assets/travel.jpg` `assets/charlie.jpg` `assets/food.jpg` `assets/games.jpg` `assets/afterwords.jpg` | Off the Clock photos |
 | `assets/IrmaWard_PM_AI.pdf` | Downloadable resume linked from the Resume section |
 
 ## Running locally
@@ -47,15 +48,19 @@ python3 -m http.server   # then visit http://localhost:8000
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <script>document.documentElement.classList.add('js');</script>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">Irma Ward</div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
+                <li><a href="#values">How I Work</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#resume">Resume</a></li>
+                <li><a href="#off-the-clock">Off the Clock</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -83,9 +88,15 @@ python3 -m http.server   # then visit http://localhost:8000
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title reveal">About Me</h2>
             <div class="about-content">
-                <div class="about-text">
+                <div class="about-text reveal">
+                    <p class="about-lead">
+                        I am passionate about project management because I thrive in collaboration, working alongside
+                        teams to improve the processes that build better products. Ten years of leading software delivery
+                        has shown me that the best outcomes come from building trust, asking the hard questions early, and
+                        bringing the right people together to solve problems none of us could crack alone.
+                    </p>
                     <p>
                         I'm a Technical Project Manager with 10+ years leading software delivery across engineering,
                         DevOps, and QA. I specialize in deploying AI enabled workflow solutions that make reporting, QA,
@@ -102,11 +113,11 @@ python3 -m http.server   # then visit http://localhost:8000
                         visibility and risk escalation.
                     </p>
                 </div>
-                <div class="about-photo">
+                <div class="about-photo reveal">
                     <img src="assets/about-tahoe.jpg" alt="Irma Ward on a boardwalk trail near Lake Tahoe">
                 </div>
             </div>
-            <div class="about-highlights">
+            <div class="about-highlights reveal-stagger">
                 <div class="highlight-card">
                     <div class="highlight-number">10+</div>
                     <div class="highlight-label">Years Leading Software Delivery</div>
@@ -123,11 +134,36 @@ python3 -m http.server   # then visit http://localhost:8000
         </div>
     </section>
 
+    <!-- Philosophy Section -->
+    <section id="values" class="philosophy">
+        <div class="container">
+            <h2 class="section-title reveal">How I Work</h2>
+            <p class="philosophy-intro reveal">A few things you can count on when we work together.</p>
+            <div class="philosophy-grid reveal-stagger">
+                <div class="philosophy-card">
+                    <span class="philosophy-icon">🤝</span>
+                    <h3>Collaboration over hierarchy</h3>
+                    <p>The best answers come from the whole team, not the org chart, so I build the room where everyone can contribute.</p>
+                </div>
+                <div class="philosophy-card">
+                    <span class="philosophy-icon">🎯</span>
+                    <h3>Clear goals and priorities</h3>
+                    <p>Everyone knows the target, the milestones along the way, and how we will measure done, so the team can move without waiting on me.</p>
+                </div>
+                <div class="philosophy-card">
+                    <span class="philosophy-icon">🧠</span>
+                    <h3>Curiosity and problem solving</h3>
+                    <p>I dig into how things actually work and ask the uncomfortable questions early, so the hard problems do not surprise us later.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
+            <h2 class="section-title reveal">Featured Projects</h2>
+            <div class="projects-grid reveal-stagger">
                 <!-- Project: AfterWords -->
                 <div class="project-card">
                     <div class="project-header" style="background: linear-gradient(135deg, #4f46e5, #7c3aed);">
@@ -197,8 +233,8 @@ python3 -m http.server   # then visit http://localhost:8000
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Skills & Expertise</h2>
-            <div class="skills-grid">
+            <h2 class="section-title reveal">Skills & Expertise</h2>
+            <div class="skills-grid reveal-stagger">
                 <div class="skill-category">
                     <h3>Project Management</h3>
                     <ul>
@@ -242,9 +278,9 @@ python3 -m http.server   # then visit http://localhost:8000
     <!-- Resume Section -->
     <section id="resume" class="resume">
         <div class="container">
-            <h2 class="section-title">Resume &amp; Background</h2>
+            <h2 class="section-title reveal">Resume &amp; Background</h2>
             <div class="resume-content">
-                <div class="resume-left">
+                <div class="resume-left reveal">
                     <h3>Education</h3>
                     <div class="resume-item">
                         <h4>Bachelor of Science, Computer Science</h4>
@@ -297,7 +333,7 @@ python3 -m http.server   # then visit http://localhost:8000
                     </div>
                 </div>
 
-                <div class="resume-right">
+                <div class="resume-right reveal-stagger">
                     <div class="resume-download">
                         <h3>Download Full Resume</h3>
                         <p>The complete rundown of my experience delivering software and implementing AI workflows.</p>
@@ -322,11 +358,63 @@ python3 -m http.server   # then visit http://localhost:8000
         </div>
     </section>
 
+    <!-- Off the Clock Section -->
+    <section id="off-the-clock" class="pastimes">
+        <div class="container">
+            <h2 class="section-title reveal">Off the Clock</h2>
+            <p class="pastimes-intro reveal">The things that keep me curious when I step away from the keyboard.</p>
+            <div class="pastimes-grid reveal-stagger">
+                <div class="pastime-card">
+                    <img class="pastime-photo" src="assets/hiking.jpg" alt="Irma and her husband on a desert hiking trail" style="object-position: center 60%;">
+                    <div class="pastime-body">
+                        <h3>Hiking</h3>
+                        <p>Most weekends I am out on a trail somewhere, chasing a good view and any excuse to be outside for a few hours.</p>
+                    </div>
+                </div>
+                <div class="pastime-card">
+                    <img class="pastime-photo" src="assets/travel.jpg" alt="Irma and her husband at a waterfall lookout" style="object-position: center 28%;">
+                    <div class="pastime-body">
+                        <h3>Travel</h3>
+                        <p>I love landing somewhere new, getting a little lost on purpose, and coming home with a longer list of places to visit.</p>
+                    </div>
+                </div>
+                <div class="pastime-card">
+                    <img class="pastime-photo" src="assets/charlie.jpg" alt="Charlie, a small black dog, sitting on a patio couch" style="object-position: center 42%;">
+                    <div class="pastime-body">
+                        <h3>Charlie O'clock</h3>
+                        <p>My husband and I have a standing tour of the parks around town with Charlie, and he makes sure none of us talks our way out of a walk.</p>
+                    </div>
+                </div>
+                <div class="pastime-card">
+                    <img class="pastime-photo" src="assets/food.jpg" alt="A plated sushi and seared tuna dish at a restaurant" style="object-position: center 45%;">
+                    <div class="pastime-body">
+                        <h3>Food adventures</h3>
+                        <p>My husband and I seek out new restaurants and cuisines together, and ordering something we cannot pronounce is half the fun.</p>
+                    </div>
+                </div>
+                <div class="pastime-card">
+                    <img class="pastime-photo" src="assets/games.jpg" alt="A cozy camp-building game with a campfire and tent" style="object-position: center 40%;">
+                    <div class="pastime-body">
+                        <h3>Adventuring in video games</h3>
+                        <p>I still love getting lost in a good game, whether it is a sprawling open world or something small and clever on a weeknight.</p>
+                    </div>
+                </div>
+                <div class="pastime-card">
+                    <img class="pastime-photo" src="assets/afterwords.jpg" alt="The AfterWords landing page, a project by Irma Ward" style="object-position: left top;">
+                    <div class="pastime-body">
+                        <h3>Experimenting with AI</h3>
+                        <p>Off the clock I build with AI tools. AfterWords is one of those, an app I designed and shipped to see what these models can do.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Let's Connect</h2>
-            <div class="contact-content">
+            <h2 class="section-title reveal">Let's Connect</h2>
+            <div class="contact-content reveal">
                 <img src="assets/contact-portrait.jpg" alt="Irma Ward" class="contact-portrait">
                 <p>
                     Based in San Marcos, CA and open to remote. I'm always up for a conversation about software delivery,
@@ -459,8 +547,10 @@ body {
 
 .nav-links {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     list-style: none;
-    gap: 2rem;
+    gap: 1rem 1.5rem;
 }
 
 .nav-links a {
@@ -531,8 +621,6 @@ body {
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid var(--cyan);
-    box-shadow: var(--shadow-lg), 0 0 30px rgba(124, 58, 237, 0.3);
 }
 
 .hero-title {
@@ -629,7 +717,6 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    animation: slideUp 0.8s ease both;
 }
 
 /* About Section */
@@ -645,10 +732,6 @@ body {
     align-items: center;
 }
 
-.about-text {
-    animation: slideUp 0.8s ease both;
-}
-
 .about-text p {
     font-size: 1.1rem;
     color: var(--gray);
@@ -656,14 +739,19 @@ body {
     line-height: 1.8;
 }
 
-.about-photo {
-    animation: slideUp 0.8s ease 0.2s both;
+.about-text p.about-lead {
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--dark);
+    border-left: 3px solid var(--cyan);
+    padding-left: 1.25rem;
+    margin-bottom: 2rem;
 }
 
 .about-photo img {
     width: 100%;
     border-radius: 12px;
-    box-shadow: var(--shadow-lg);
     object-fit: cover;
     aspect-ratio: 4 / 5;
 }
@@ -673,7 +761,6 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     margin-top: 3rem;
-    animation: slideUp 0.8s ease 0.2s both;
 }
 
 .highlight-card {
@@ -705,6 +792,58 @@ body {
     margin-top: 0.5rem;
 }
 
+/* Philosophy / How I Work Section */
+.philosophy {
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, var(--blue-light), var(--cyan-light));
+}
+
+.philosophy-intro {
+    text-align: center;
+    color: var(--gray);
+    font-size: 1.1rem;
+    margin-top: -1.5rem;
+    margin-bottom: 3rem;
+}
+
+.philosophy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+}
+
+.philosophy-card {
+    padding: 2rem;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.philosophy-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.philosophy-icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.philosophy-card h3 {
+    color: var(--blue);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.philosophy-card p {
+    color: var(--gray);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
 /* Projects Section */
 .projects {
     padding: 5rem 2rem;
@@ -723,7 +862,6 @@ body {
     overflow: hidden;
     box-shadow: var(--shadow-md);
     transition: var(--transition);
-    animation: slideUp 0.8s ease both;
 }
 
 .project-card:hover {
@@ -797,7 +935,6 @@ body {
     background: linear-gradient(135deg, var(--blue-light), var(--cyan-light));
     border-radius: 12px;
     box-shadow: var(--shadow-sm);
-    animation: slideUp 0.8s ease both;
     transition: var(--transition);
 }
 
@@ -844,10 +981,6 @@ body {
     gap: 3rem;
 }
 
-.resume-left {
-    animation: slideUp 0.8s ease both;
-}
-
 .resume-item {
     margin-bottom: 2rem;
     padding-bottom: 2rem;
@@ -874,10 +1007,6 @@ body {
 .resume-item p {
     color: var(--gray);
     line-height: 1.8;
-}
-
-.resume-right {
-    animation: slideUp 0.8s ease 0.2s both;
 }
 
 .resume-download,
@@ -940,6 +1069,91 @@ body {
     text-decoration: underline;
 }
 
+/* Off the Clock Section */
+.pastimes {
+    padding: 5rem 2rem;
+    background-color: var(--white);
+}
+
+.pastimes-intro {
+    text-align: center;
+    color: var(--gray);
+    font-size: 1.1rem;
+    margin-top: -1.5rem;
+    margin-bottom: 3rem;
+}
+
+.pastimes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+@media (max-width: 900px) {
+    .pastimes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 560px) {
+    .pastimes-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.pastime-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0.9rem;
+    background: var(--light-bg);
+    border-radius: 14px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.pastime-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.pastime-photo {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    display: block;
+}
+
+.pastime-body {
+    padding: 0 0.6rem 0.4rem;
+}
+
+.pastime-body h3 {
+    color: var(--blue);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.pastime-body p {
+    color: var(--gray);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* ==========================================
+   PHOTO FRAMES (every picture on the page)
+   ========================================== */
+.hero-image,
+.about-photo img,
+.pastime-photo,
+.contact-portrait {
+    padding: 6px;
+    background-color: var(--white);
+    border: 1px solid var(--light-gray);
+    box-shadow: var(--shadow-md);
+}
+
 /* Contact Section */
 .contact {
     padding: 5rem 2rem;
@@ -948,17 +1162,14 @@ body {
 
 .contact-content {
     text-align: center;
-    animation: slideUp 0.8s ease both;
 }
 
 .contact-portrait {
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
     object-position: center top;
-    border: 4px solid var(--white);
-    box-shadow: var(--shadow-lg);
     margin-bottom: 1.5rem;
 }
 
@@ -1044,6 +1255,8 @@ body {
     .nav-links {
         gap: 1rem;
         font-size: 0.9rem;
+        flex-wrap: wrap;
+        justify-content: flex-end;
     }
 
     .section-title {
@@ -1096,41 +1309,56 @@ body {
 }
 
 /* ==========================================
-   ANIMATIONS ON SCROLL (Enhanced)
+   REVEAL ON SCROLL
    ========================================== */
-.project-card,
-.skill-category,
-.resume-item {
+/* keep sideways-flying cards from nudging a scrollbar mid-animation */
+section {
+    overflow-x: clip;
+}
+
+.js .reveal,
+.js .reveal-stagger > * {
     opacity: 0;
-    animation: slideUp 0.8s ease forwards;
+    translate: 0 90px;
+    scale: 0.9;
+    filter: blur(12px);
+    transition: opacity 0.6s ease,
+                translate 0.8s cubic-bezier(0.34, 1.56, 0.64, 1),
+                scale 0.8s cubic-bezier(0.34, 1.56, 0.64, 1),
+                filter 0.7s ease,
+                transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.projects-grid .project-card:nth-child(1) {
-    animation-delay: 0s;
+/* Directional: staggered children fly in alternately from the sides */
+.js .reveal-stagger > *:nth-child(odd) { translate: -80px 30px; }
+.js .reveal-stagger > *:nth-child(even) { translate: 80px 30px; }
+
+.js .reveal.is-visible,
+.js .reveal-stagger.is-visible > * {
+    opacity: 1;
+    translate: 0;
+    scale: 1;
+    filter: blur(0);
 }
 
-.projects-grid .project-card:nth-child(2) {
-    animation-delay: 0.1s;
-}
+.reveal-stagger.is-visible > *:nth-child(2) { transition-delay: 0.12s; }
+.reveal-stagger.is-visible > *:nth-child(3) { transition-delay: 0.24s; }
+.reveal-stagger.is-visible > *:nth-child(4) { transition-delay: 0.36s; }
+.reveal-stagger.is-visible > *:nth-child(5) { transition-delay: 0.48s; }
+.reveal-stagger.is-visible > *:nth-child(6) { transition-delay: 0.60s; }
+.reveal-stagger.is-visible > *:nth-child(n+7) { transition-delay: 0.68s; }
 
-.projects-grid .project-card:nth-child(3) {
-    animation-delay: 0.2s;
-}
-
-.skills-grid .skill-category:nth-child(1) {
-    animation-delay: 0s;
-}
-
-.skills-grid .skill-category:nth-child(2) {
-    animation-delay: 0.1s;
-}
-
-.skills-grid .skill-category:nth-child(3) {
-    animation-delay: 0.2s;
-}
-
-.skills-grid .skill-category:nth-child(4) {
-    animation-delay: 0.3s;
+@media (prefers-reduced-motion: reduce) {
+    .js .reveal,
+    .js .reveal-stagger > *,
+    .js .reveal-stagger > *:nth-child(odd),
+    .js .reveal-stagger > *:nth-child(even) {
+        opacity: 1;
+        translate: 0;
+        scale: 1;
+        filter: none;
+        transition: none;
+    }
 }
 ```
 
@@ -1159,27 +1387,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Intersection Observer for fade-in animations on scroll
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
+// Reveal elements as they scroll into view
+const revealTargets = document.querySelectorAll('.reveal, .reveal-stagger');
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-const observer = new IntersectionObserver(function(entries) {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            // Add animation class when element comes into view
-            entry.target.style.opacity = '1';
-            observer.unobserve(entry.target);
-        }
-    });
-}, observerOptions);
+if (revealTargets.length && !prefersReducedMotion) {
+    const revealObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0, rootMargin: '0px 0px -120px 0px' });
 
-// Observe all elements with animation classes
-document.querySelectorAll('.project-card, .skill-category').forEach(element => {
-    element.style.opacity = '0';
-    observer.observe(element);
-});
+    revealTargets.forEach(el => revealObserver.observe(el));
+} else {
+    revealTargets.forEach(el => el.classList.add('is-visible'));
+}
 
 // Active navigation link on scroll
 window.addEventListener('scroll', () => {

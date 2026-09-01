@@ -7,15 +7,19 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <script>document.documentElement.classList.add('js');</script>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">Irma Ward</div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
+                <li><a href="#values">How I Work</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#resume">Resume</a></li>
+                <li><a href="#off-the-clock">Off the Clock</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -43,9 +47,15 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title reveal">About Me</h2>
             <div class="about-content">
-                <div class="about-text">
+                <div class="about-text reveal">
+                    <p class="about-lead">
+                        I am passionate about project management because I thrive in collaboration, working alongside
+                        teams to improve the processes that build better products. Ten years of leading software delivery
+                        has shown me that the best outcomes come from building trust, asking the hard questions early, and
+                        bringing the right people together to solve problems none of us could crack alone.
+                    </p>
                     <p>
                         I'm a Technical Project Manager with 10+ years leading software delivery across engineering,
                         DevOps, and QA. I specialize in deploying AI enabled workflow solutions that make reporting, QA,
@@ -62,11 +72,11 @@
                         visibility and risk escalation.
                     </p>
                 </div>
-                <div class="about-photo">
+                <div class="about-photo reveal">
                     <img src="assets/about-tahoe.jpg" alt="Irma Ward on a boardwalk trail near Lake Tahoe">
                 </div>
             </div>
-            <div class="about-highlights">
+            <div class="about-highlights reveal-stagger">
                 <div class="highlight-card">
                     <div class="highlight-number">10+</div>
                     <div class="highlight-label">Years Leading Software Delivery</div>
@@ -83,11 +93,36 @@
         </div>
     </section>
 
+    <!-- Philosophy Section -->
+    <section id="values" class="philosophy">
+        <div class="container">
+            <h2 class="section-title reveal">How I Work</h2>
+            <p class="philosophy-intro reveal">A few things you can count on when we work together.</p>
+            <div class="philosophy-grid reveal-stagger">
+                <div class="philosophy-card">
+                    <span class="philosophy-icon">🤝</span>
+                    <h3>Collaboration over hierarchy</h3>
+                    <p>The best answers come from the whole team, not the org chart, so I build the room where everyone can contribute.</p>
+                </div>
+                <div class="philosophy-card">
+                    <span class="philosophy-icon">🎯</span>
+                    <h3>Clear goals and priorities</h3>
+                    <p>Everyone knows the target, the milestones along the way, and how we will measure done, so the team can move without waiting on me.</p>
+                </div>
+                <div class="philosophy-card">
+                    <span class="philosophy-icon">🧠</span>
+                    <h3>Curiosity and problem solving</h3>
+                    <p>I dig into how things actually work and ask the uncomfortable questions early, so the hard problems do not surprise us later.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
+            <h2 class="section-title reveal">Featured Projects</h2>
+            <div class="projects-grid reveal-stagger">
                 <!-- Project: AfterWords -->
                 <div class="project-card">
                     <div class="project-header" style="background: linear-gradient(135deg, #4f46e5, #7c3aed);">
@@ -157,8 +192,8 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Skills & Expertise</h2>
-            <div class="skills-grid">
+            <h2 class="section-title reveal">Skills & Expertise</h2>
+            <div class="skills-grid reveal-stagger">
                 <div class="skill-category">
                     <h3>Project Management</h3>
                     <ul>
@@ -202,9 +237,9 @@
     <!-- Resume Section -->
     <section id="resume" class="resume">
         <div class="container">
-            <h2 class="section-title">Resume &amp; Background</h2>
+            <h2 class="section-title reveal">Resume &amp; Background</h2>
             <div class="resume-content">
-                <div class="resume-left">
+                <div class="resume-left reveal">
                     <h3>Education</h3>
                     <div class="resume-item">
                         <h4>Bachelor of Science, Computer Science</h4>
@@ -257,7 +292,7 @@
                     </div>
                 </div>
 
-                <div class="resume-right">
+                <div class="resume-right reveal-stagger">
                     <div class="resume-download">
                         <h3>Download Full Resume</h3>
                         <p>The complete rundown of my experience delivering software and implementing AI workflows.</p>
@@ -282,11 +317,63 @@
         </div>
     </section>
 
+    <!-- Off the Clock Section -->
+    <section id="off-the-clock" class="pastimes">
+        <div class="container">
+            <h2 class="section-title reveal">Off the Clock</h2>
+            <p class="pastimes-intro reveal">The things that keep me curious when I step away from the keyboard.</p>
+            <div class="pastimes-grid reveal-stagger">
+                <div class="pastime-card">
+                    <img class="pastime-photo" src="assets/hiking.jpg" alt="Irma and her husband on a desert hiking trail" style="object-position: center 60%;">
+                    <div class="pastime-body">
+                        <h3>Hiking</h3>
+                        <p>Most weekends I am out on a trail somewhere, chasing a good view and any excuse to be outside for a few hours.</p>
+                    </div>
+                </div>
+                <div class="pastime-card">
+                    <img class="pastime-photo" src="assets/travel.jpg" alt="Irma and her husband at a waterfall lookout" style="object-position: center 28%;">
+                    <div class="pastime-body">
+                        <h3>Travel</h3>
+                        <p>I love landing somewhere new, getting a little lost on purpose, and coming home with a longer list of places to visit.</p>
+                    </div>
+                </div>
+                <div class="pastime-card">
+                    <img class="pastime-photo" src="assets/charlie.jpg" alt="Charlie, a small black dog, sitting on a patio couch" style="object-position: center 42%;">
+                    <div class="pastime-body">
+                        <h3>Charlie O'clock</h3>
+                        <p>My husband and I have a standing tour of the parks around town with Charlie, and he makes sure none of us talks our way out of a walk.</p>
+                    </div>
+                </div>
+                <div class="pastime-card">
+                    <img class="pastime-photo" src="assets/food.jpg" alt="A plated sushi and seared tuna dish at a restaurant" style="object-position: center 45%;">
+                    <div class="pastime-body">
+                        <h3>Food adventures</h3>
+                        <p>My husband and I seek out new restaurants and cuisines together, and ordering something we cannot pronounce is half the fun.</p>
+                    </div>
+                </div>
+                <div class="pastime-card">
+                    <img class="pastime-photo" src="assets/games.jpg" alt="A cozy camp-building game with a campfire and tent" style="object-position: center 40%;">
+                    <div class="pastime-body">
+                        <h3>Adventuring in video games</h3>
+                        <p>I still love getting lost in a good game, whether it is a sprawling open world or something small and clever on a weeknight.</p>
+                    </div>
+                </div>
+                <div class="pastime-card">
+                    <img class="pastime-photo" src="assets/afterwords.jpg" alt="The AfterWords landing page, a project by Irma Ward" style="object-position: left top;">
+                    <div class="pastime-body">
+                        <h3>Experimenting with AI</h3>
+                        <p>Off the clock I build with AI tools. AfterWords is one of those, an app I designed and shipped to see what these models can do.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Let's Connect</h2>
-            <div class="contact-content">
+            <h2 class="section-title reveal">Let's Connect</h2>
+            <div class="contact-content reveal">
                 <img src="assets/contact-portrait.jpg" alt="Irma Ward" class="contact-portrait">
                 <p>
                     Based in San Marcos, CA and open to remote. I'm always up for a conversation about software delivery,

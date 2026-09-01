@@ -20,27 +20,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Intersection Observer for fade-in animations on scroll
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
+// Reveal elements as they scroll into view
+const revealTargets = document.querySelectorAll('.reveal, .reveal-stagger');
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-const observer = new IntersectionObserver(function(entries) {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            // Add animation class when element comes into view
-            entry.target.style.opacity = '1';
-            observer.unobserve(entry.target);
-        }
-    });
-}, observerOptions);
+if (revealTargets.length && !prefersReducedMotion) {
+    const revealObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0, rootMargin: '0px 0px -120px 0px' });
 
-// Observe all elements with animation classes
-document.querySelectorAll('.project-card, .skill-category').forEach(element => {
-    element.style.opacity = '0';
-    observer.observe(element);
-});
+    revealTargets.forEach(el => revealObserver.observe(el));
+} else {
+    revealTargets.forEach(el => el.classList.add('is-visible'));
+}
 
 // Active navigation link on scroll
 window.addEventListener('scroll', () => {
