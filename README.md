@@ -28,7 +28,6 @@ python3 -m http.server   # then visit http://localhost:8000
 
 ## Still to customize
 
-- Confirm the LinkedIn URL (`https://www.linkedin.com/in/irma-ward` is a placeholder guess)
 - Point the "Project Portfolio on GitHub" link at the specific repo
 - Swap in a real link for "AI Reporting in the Atlassian Suite" if one exists publicly
 
@@ -340,7 +339,7 @@ python3 -m http.server   # then visit http://localhost:8000
                     <a href="https://github.com/Irma-Ward" class="contact-link" target="_blank">
                         <span class="contact-icon">💻</span> GitHub
                     </a>
-                    <a href="https://www.linkedin.com/in/irma-ward" class="contact-link" target="_blank">
+                    <a href="https://www.linkedin.com/in/irmaward" class="contact-link" target="_blank">
                         <span class="contact-icon">💼</span> LinkedIn
                     </a>
                 </div>
